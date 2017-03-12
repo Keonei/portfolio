@@ -43,3 +43,9 @@ body {
   margin-right: auto;
   width: 960px;
 }
+
+hr.line {
+  width: 57%;
+  float: right;
+  margin-top: 162px;
+}
