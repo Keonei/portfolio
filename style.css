@@ -1,0 +1,39 @@
+html, body, div, b, ul, li, header, hgroup {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	list-style: none;
+	font-size: 100%;
+}
+
+article, div, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+body {
+	font-family: Franklin Gothic Book, Franklin Gothic Demi, Franklin Gothic Medium;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	background: #fff;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: url(images/fleck-white.gif) fixed repeat center center;
+	height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+pagewidth {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px
+}
