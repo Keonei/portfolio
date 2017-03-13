@@ -1,4 +1,4 @@
-html, body, div, b, ul, li, header, hgroup {
+body, b, div, h1, h2, header, hgroup, html, li, p, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -11,8 +11,20 @@ article, div, footer, header, hgroup, nav, section {
 	display: block;
 }
 
+header, .main {
+  position: relative;
+}
+
+hr {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
 body {
-	font-family: Franklin Gothic Book, Franklin Gothic Demi, Franklin Gothic Medium;
+	font-family: "Franklin Gothic Book", "Franklin Gothic Demi", "Franklin Gothic Medium";
 	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
@@ -25,19 +37,34 @@ body {
 	height: 100%;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
+h1 {
+  font-size: 20px;
 }
 
+a {
+	color: #000;
+	}
+
+a:link {
+		color: #000;
+		}
+
+a:visited {
+		color: #000;
+		}
+
+a:hover {
+		color: #9bcde8;
+		}
 
 #container {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+header {
+  height: 286px;
+}
 .pagewidth {
   margin-left: auto;
   margin-right: auto;
@@ -48,4 +75,30 @@ hr.line {
   width: 57%;
   float: right;
   margin-top: 162px;
+}
+
+nav#menu {
+  background-color: #fff;
+  float: right;
+  position: relative;
+}
+
+nav#menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: .2px;
+  margin-left: 10px;
+  padding-right: 4px;
+  float: right;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #000;
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 958px;
+	padding-left: 200px;
 }
