@@ -98,7 +98,50 @@ nav#menu a {
 
 .main {
   margin: 0 auto;
-  width: 100%;
-  max-width: 958px;
+  max-width: 960px;
 	padding-left: 200px;
+}
+
+article {
+  width: 46.5%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+.hello {
+  background-color: #e98a02;
+  float: right;
+  padding: 20px 40px 40px 40px;
+}
+
+.content {
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.space {
+  background-color: #000;
+  float: right;
+  width: 100%;
+  height: 155px;
+  padding: 20px 40px 40px 40px;
+}
+footer {
+  font-size: 12px;
+  padding-top: 25px;
+  width: 827px;
+  float: left;
+  padding-left: 200px;
+}
+
+.nav2 {
+  width: 350px;
+  float: right;
+  text-align: right;
+}
+
+.nav2 a {
+text-transform: uppercase;
+text-decoration: none;
 }
