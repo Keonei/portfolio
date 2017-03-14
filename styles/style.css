@@ -20,6 +20,7 @@ hr {
 }
 
 img {
+  border: 0;
   vertical-align: middle;
   max-width: 100%;
 }
@@ -33,7 +34,7 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background: url(images/fleck-white.gif) fixed repeat center center;
+	background: url(/images/fleck-white.gif) fixed repeat center center;
 	height: 100%;
 }
 
@@ -65,6 +66,7 @@ a:hover {
 header {
   height: 286px;
 }
+
 .pagewidth {
   margin-left: auto;
   margin-right: auto;
@@ -77,13 +79,13 @@ hr.line {
   margin-top: 162px;
 }
 
-nav#menu {
+nav ui {
   background-color: #fff;
   float: right;
   position: relative;
 }
 
-nav#menu a {
+nav a ui {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;
@@ -144,4 +146,11 @@ footer {
 .nav2 a {
 text-transform: uppercase;
 text-decoration: none;
+}
+
+.main h1 {
+  position: absolute;
+  margin-bottom: 50px;
+  text-align: center;
+  top: 75%;
 }
