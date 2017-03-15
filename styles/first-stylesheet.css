@@ -1,4 +1,4 @@
-body, b, div, h1, h2, header, hgroup, html, li, p, ul {
+body, b, div, h1, h2, header, html, li, p, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -7,7 +7,7 @@ body, b, div, h1, h2, header, hgroup, html, li, p, ul {
 	font-size: 100%;
 }
 
-a, article, div, footer, header, hgroup, li, nav, section {
+a, article, div, footer, header, li, nav, section {
 	display: block;
 }
 
@@ -17,6 +17,21 @@ header, .main, footer {
 
 hr {
   margin: 0;
+}
+
+hr.line {
+  height: 2px;
+  width: 57%;
+  border: 0;
+  float: right;
+  margin-top: 162px;
+  background: black;
+}
+
+hr.line2 {
+  height: 2px;
+  border: 0;
+  background: black;
 }
 
 img {
@@ -71,12 +86,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-}
-
-hr.line {
-  width: 57%;
-  float: right;
-  margin-top: 162px;
 }
 
 nav ul li {
