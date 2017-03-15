@@ -38,6 +38,7 @@ img {
   border: 0;
   vertical-align: middle;
   max-width: 100%;
+  -ms-interpolation-mode: bicubic;
 }
 
 body {
