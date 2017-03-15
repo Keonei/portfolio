@@ -50,7 +50,7 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background: url (images/fleck-white.gif) fixed repeat center center;
+	background: url(styles/fleck-white.gif) fixed repeat center center;
 	height: 100%;
 }
 
