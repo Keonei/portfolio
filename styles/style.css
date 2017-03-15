@@ -109,12 +109,8 @@ nav[role="sub"] ul li {
 }
 
 .main {
-  margin: 0 auto;
   width: 100%;
-  height: 100%;
-  max-width: 960px;
-  float: right;
-  padding-bottom: 25px;
+  padding-left: 130px;
 }
 
 .main h1 {
@@ -123,13 +119,13 @@ nav[role="sub"] ul li {
 }
 
 article {
-  width: 46.5%;
+  width: 43%;
   position: relative;
   float: left;
   overflow: hidden;
 }
 
-.hello {
+.intro {
   background-color: #e98a02;
   float: right;
   padding: 40px 40px 40px 40px;
@@ -144,12 +140,33 @@ article {
   background-color: #000;
   float: right;
   width: 100%;
-  height: 272px
+  height: 194px
+}
+
+.space2 {
+  background-color: #000;
+  float: right;
+  width: 100%;
+  height: 312px;
+}
+
+.design-image {
+  position: relative;
+  display: inline-block;
+  width: 86%;
+}
+
+.design-image h1 span {
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size: 5em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 footer {
   width: 100%;
-  max-width: 1020px;
   font-size: 12px;
-  padding: 0 13px 13px 13px;
+  padding: 20px 0 20px 0;
   float: right;
 }
