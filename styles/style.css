@@ -125,6 +125,17 @@ article {
   overflow: hidden;
 }
 
+figure {
+  width: 273px;
+  height: 273px;
+  float: left;
+  position: relative;
+  margin: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e98a02;
+}
+
 .intro {
   background-color: #e98a02;
   float: right;
