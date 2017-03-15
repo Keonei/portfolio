@@ -49,7 +49,7 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background: url(/images/fleck-white.gif) fixed repeat center center;
+	background: url(images/fleck-white.gif) fixed repeat center center;
 	height: 100%;
 }
 
@@ -101,7 +101,7 @@ nav a {
   text-decoration: none;
 }
 
-nav[role="main"] ul li {
+nav.top ul li {
   font-size: 20px;
   letter-spacing: .2px;
   text-transform: uppercase;
@@ -112,7 +112,7 @@ nav[role="main"] ul li {
   border-right-color: #000;
 }
 
-nav[role="sub"] ul li {
+nav.sub ul li {
   margin-left: 2px;
   border-right-width: 1px;
 }
