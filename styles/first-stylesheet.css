@@ -1,37 +1,12 @@
-body, b, div, h1, h2, header, html, li, p, ul {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	list-style: none;
-	font-size: 100%;
-}
-
-a, article, div, footer, header, li, nav, section {
-	display: block;
-}
-
-header, .main, footer {
-  position: relative;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 hr {
   margin: 0;
-}
-
-hr.line {
-  height: 2px;
-  width: 57%;
-  border: 0;
-  float: right;
-  margin-top: 162px;
-  background: black;
-}
-
-hr.line2 {
-  height: 2px;
-  border: 0;
-  background: black;
 }
 
 img {
@@ -42,7 +17,7 @@ img {
 
 body {
 	font-family: "Franklin Gothic Book", "Franklin Gothic Demi", "Franklin Gothic Medium";
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -50,21 +25,46 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background: url(styles/fleck-white.gif) fixed repeat center center;
+	background: url(/images/fleck-white.gif) fixed repeat center center;
 	height: 100%;
 }
 
-h1 {
-  font-size: 20px;
+@Font-Face {
+	font-family: "Franklin Gothic Book";
+	src: url('/Fonts/FRABK.TTF') format ("truetype");
+	src: url('/Fonts/FRABK.eot') format ("embedded-opentype");
+	src: url('/Fonts/FRABK.woff') format ('woff');
+	src: url('/Fonts/FRABK.otf') format ("otf");
+	src: url('/Fonts/FRABK.svg') format ("svg");
+}
+@Font-Face {
+	font-family: "Franklin Gothic Medium";
+	src: url('/Fonts/framd.ttf') format ('truetype');
+	src: url('/Fonts/framd.eot') format ('embedded-opentype');
+	src: url('/Fonts/framd.woff') format ('woff');
+	src: url('/Fonts/framd.otf') format ('otf');
+	src: url('/Fonts/framd.svg') format ('svg');
+}
+@Font-Face {
+	font-family: "Franklin Gothic Demi";
+	src: url('/Fonts/fradm.ttf') format ('truetype');
+	src: url('/Fonts/fradm.eot') format ('embedded-opentype');
+	src: url('/Fonts/fradm.woff') format ('woff');
+	src: url('/Fonts/fradm.otf') format ('otf');
+	src: url('/Fonts/fradm.svg') format ('svg');
 }
 
-h2 {
-  font-size: 20px;
+h1 {
+  font-size: 1.25rem;
 }
 
 a {
 	color: #000;
-	}
+	transition: all .2s ease-in;
+	-webkit-transition: all .1 ease-in;
+	-moz-transition: all .1s ease-in;
+	-o-transition: all .1s ease in;
+}
 
 a:link {
 		color: #000;
@@ -79,28 +79,36 @@ a:hover {
 		}
 
 #container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 header {
+	display: flex;
+	flex-wrap: nowrap;
   height: 286px;
+	max-width: 960px;
+	background-color: #fff;
+	margin-left: auto 0;
+	margin-right: auto 0;
+	box-shadow: 0 .1em .2em -.1em grey;
+
 }
 
 .pagewidth {
-  margin-left: auto;
-  margin-right: auto;
   width: 960px;
 }
 
-.left {
-  float: left;
+hr.line {
+  width: 57%;
+  float: right;
+  margin-top: 162px;
 }
 
 nav ul li {
+	display: flex;
+	flex-direction: row;
   background-color: #fff;
-  float: right;
-  position: relative;
   float: right;
   padding-right: 4px;
   text-align: right;
@@ -108,9 +116,10 @@ nav ul li {
 
 nav a {
   text-decoration: none;
+	flex: auto;
 }
 
-nav.top ul li {
+nav[role="main"] ul li {
   font-size: 20px;
   letter-spacing: .2px;
   text-transform: uppercase;
@@ -121,13 +130,15 @@ nav.top ul li {
   border-right-color: #000;
 }
 
-nav.sub ul li {
+nav[role="sub"] ul li {
   margin-left: 2px;
   border-right-width: 1px;
 }
 
 .main {
+	display: flex;
   width: 100%;
+	max-width: 960px;
   padding-left: 130px;
 }
 
@@ -136,15 +147,15 @@ nav.sub ul li {
   text-transform: uppercase;
 }
 
-article {
-  width: 43%;
-  position: relative;
-  float: left;
-  overflow: hidden;
+.main img {
+	width: 50%;
+	float: left;
 }
 
-article img {
-  width: 100%;
+article {
+  width: 50%;
+  float: left;
+  overflow: hidden;
 }
 
 figure {
