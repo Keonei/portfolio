@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+ul, li {
+	list-style: none;
+}
+
 hr {
   margin: 0;
 }
@@ -22,10 +26,6 @@ body {
 	font-variant: normal;
 	font-weight: normal;
 	background: #fff;
-	position: relative;
-	margin: 0;
-	padding: 0;
-	background: url(/images/fleck-white.gif) fixed repeat center center;
 	height: 100%;
 }
 
@@ -79,35 +79,38 @@ a:hover {
 		}
 
 #container {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+	background: url(/images/fleck-white.gif) fixed repeat center center;
+  margin-left: 1.75vw;
+  margin-right: 1.75vw;
 }
 
 header {
 	display: flex;
-	flex-wrap: nowrap;
-  height: 286px;
-	max-width: 960px;
 	background-color: #fff;
-	margin-left: auto 0;
-	margin-right: auto 0;
-	box-shadow: 0 .1em .2em -.1em grey;
+	width: 960px;
+  padding-bottom: 1em;
 
 }
 
-.pagewidth {
-  width: 960px;
+hgroup {
+	float: left;
 }
 
 hr.line {
-  width: 57%;
+	background-color: #000;
+  width: 28%;
+	height: 2px;
   float: right;
-  margin-top: 162px;
+	border: 0 none;
+  margin-top: 10.1em;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
 }
 
 nav ul li {
-	display: flex;
-	flex-direction: row;
   background-color: #fff;
   float: right;
   padding-right: 4px;
@@ -119,8 +122,8 @@ nav a {
 	flex: auto;
 }
 
-nav[role="main"] ul li {
-  font-size: 20px;
+.nav-main ul li {
+  font-size: 1.25em;
   letter-spacing: .2px;
   text-transform: uppercase;
   margin-left: 10px;
@@ -130,9 +133,26 @@ nav[role="main"] ul li {
   border-right-color: #000;
 }
 
-nav[role="sub"] ul li {
+.nav-main  {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #000;
+	margin-top: 10.1em
+}
+
+.nav-main ul{
+	margin: 0;
+}
+
+.nav-sub ul li {
   margin-left: 2px;
   border-right-width: 1px;
+}
+
+.nav-sub li + li {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000;
 }
 
 .main {
