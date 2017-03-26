@@ -21,7 +21,7 @@ img {
 
 body {
 	font-family: 'Crimson Text', serif;
-	font-size: 1rem;
+	font-size: 1.125rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -31,6 +31,12 @@ body {
 
 h1 {
   font-size: 1.25rem;
+}
+
+h2 {
+	font-size: 1.150rem;
+	text-align: center;
+	font-weight: bold;
 }
 
 a {
@@ -61,9 +67,9 @@ a:hover {
 
 header {
 	display: flex;
-	background-color: #fff;
-	min-width: 960px;
+	max-width: 960px;
   padding-bottom: 1em;
+	margin: auto;
 
 }
 
@@ -71,17 +77,46 @@ hgroup {
 	float: left;
 }
 
+@media screen and (max-width: 701px) {
+hgroup {width: 61%}
+}
+
 hr.line {
 	display: block;
 	background-color: #000;
-  width: 28%;
+  width: 26%;
 	height: 2px;
   float: right;
 	border: 0 none;
-  margin-top: 10.1em;
+  margin-top: 9em;
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:1024px) {
+	hr.line {width: 24%}
+
+}
+
+@media screen and (max-width:971px) {
+	hr.line {width: 22%}
+
+}
+
+@media screen and (max-width:946px) {
+	hr.line {width: 20%}
+
+}
+
+@media screen and (max-width:923px) {
+	hr.line {width: 18%}
+
+}
+
+@media screen and (max-width:901px) {
+	hr.line {width: 16%}
+
+}
+
+@media screen and (max-width:860px) {
 	hr.line {display: none}
 
 }
@@ -118,11 +153,25 @@ nav a {
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: #000;
-	margin-top: 10.1em
+	margin-top: 9em
+}
+
+@media screen and (max-width:743px) {
+	.nav-main {margin-top: 10em; font-size: .90em;}
+
+}
+
+@media screen and (max-width:921px) {
+	.nav-main {border: none; margin-top: 10.3em; font-size: .80em;}
+
 }
 
 .nav-main ul{
 	margin: 0;
+}
+
+.nav-sub {
+	float: right;
 }
 
 .nav-sub ul li {
@@ -141,6 +190,7 @@ nav a {
   width: 100%;
 	max-width: 960px;
   padding-left: 130px;
+	margin: auto;
 }
 
 .main h1 {
@@ -185,27 +235,25 @@ figure {
   background-color: #000;
   float: right;
   width: 100%;
-  height: 194px
+  height: 4em
 }
 
 .space2 {
   background-color: #000;
   float: right;
   width: 100%;
-  height: 312px;
+  height: 13.4em;
 }
 
-.design-image {
-  position: relative;
-  display: inline-block;
-  width: 86%;
+.design-image img {
+  display: inline-flex;
+  width: 100%;
 }
 
 .design-image h1 span {
   color: #fff;
   position: absolute;
-  top: 10%;
-  left: 20%;
+  left: 3em;
   font-size: 5em;
   text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
@@ -214,4 +262,13 @@ footer {
   font-size: 12px;
   padding: 20px 0 20px 0;
   float: right;
+}
+
+hr.footer-line {
+	display: block;
+	background-color: #000;
+  width: 100%;
+	height: 2px;
+  float: right;
+	border: 0 none;
 }
