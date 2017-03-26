@@ -73,12 +73,12 @@ header {
 
 }
 
-hgroup {
+.logo {
 	float: left;
 }
 
 @media screen and (max-width: 701px) {
-hgroup {width: 61%}
+.logo {width: 61%}
 }
 
 hr.line {
