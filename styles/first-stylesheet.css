@@ -60,7 +60,7 @@ a:hover {
 		}
 
 #container {
-	background: url(images/fleck-white.gif) fixed repeat center center;
+	background: url(styles/styles/fleck-white.gif) fixed repeat center center;
   margin-left: 1.75vw;
   margin-right: 1.75vw;
 }
