@@ -14,6 +14,7 @@ hr {
 }
 
 img {
+  display: block;
   border: 0;
   vertical-align: middle;
   max-width: 100%;
@@ -31,12 +32,12 @@ body {
 
 h1 {
   font-size: 1.25rem;
+  margin: 0;
 }
 
 h2 {
 	font-size: 1.150rem;
 	text-align: center;
-	font-weight: bold;
 }
 
 a {
@@ -60,7 +61,7 @@ a:hover {
 		}
 
 #container {
-	background-image: url('images/fleck-white.gif') fixed repeat center center;
+	background: url(../images/fleck-white.gif) fixed repeat center center;
   margin-left: 1.75vw;
   margin-right: 1.75vw;
 }
@@ -81,11 +82,19 @@ header {
 }
 
 .logo {
-	float: left;
+  order: 1;
+  justify-content: flex-start;
 }
 
-@media all and (max-width: 701px) {
-.logo {width: 61%}
+@media all and (max-width: 768px) {
+  .logo {
+    width: 100%;
+  }
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 nav ul li {
@@ -98,27 +107,8 @@ nav a {
   text-decoration: none;
 }
 
-/* incorporate something like this to fix the header on scroll and id the main nav
-#nav-main .fixed-header {
-  position: fixed;
-  top:0; left:0;
-  width: 100%;
-}
-/* add this jquery:
-
-var $window = $(window);
-var nav = $('#main-navigation');
-$window.scroll(function(){
-    if ($window.scrollTop() >= 300) {
-       nav.addClass('fixed-header');
-    }
-    else {
-       nav.removeClass('fixed-header');
-    }
-});
-*/
-
 .nav-main  {
+  order: 2;
   padding-left: 14.3em;
 	border-top-width: .15em;
 	border-top-style: solid;
@@ -188,40 +178,64 @@ $window.scroll(function(){
 /* smaller than 768px */
 @media all and (max-width: 768px) {
 	.nav-main {
+    width: 100%;
     border: none;
+    padding: 0;
+    margin-top: 0;
   }
   .nav-main ul li {
     font-size: 1.2em;
   }
 }
 
-.main {
+@media all and (max-width: 584px) {
+  .nav-main {
+    width: 72%;
+  }
+}
+
+main {
 	display: flex;
+  flex-wrap: wrap;
   width: 100%;
 	max-width: 960px;
   padding-left: 130px;
 	margin: auto;
 }
 
-.main h1 {
+main > [class^="main-"] {
+  padding: 0;
+}
+
+main > [class^="main-"]:last-child {
+  padding: 0;
+}
+
+.column1 {
+  width: 50%;
+}
+
+.column2 {
+  background-color: black;
+  width: 50%;
+}
+
+.column1 img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+main h2 {
   text-align: center;
   text-transform: uppercase;
 }
 
-.main img {
-	width: 50%;
-	float: left;
-}
-
 article {
-  width: 50%;
-  float: left;
   overflow: hidden;
 }
 
 .intro {
   background-color: #e98a02;
-  float: right;
   padding: 40px 40px 40px 40px;
 }
 
@@ -230,20 +244,61 @@ article {
   letter-spacing: 1px;
 }
 
+@media all and (max-width: 760px) {
+	.intro {
+    padding: 1em;
+  }
+  main h2 {
+    font-size: 1em;
+    margin: 0;
+  }
+  .content {
+    letter-spacing: normal;
+    font-size: .875em;
+  }
+}
+
+@media all and (max-width: 584px) {
+	main {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  main h2 {
+    font-size: 1.150em;
+  }
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .content {
+    font-size: 1.125em;
+    letter-spacing: 1px;
+  }
+  .intro {
+    background-color: #e98a02;
+    padding: 40px 40px 40px 40px;
+  }
+}
+
 .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 	font-family: sans-serif;
 	font-size: .8em;
-	display: block;
-  background-color: #000;
-  float: right;
   width: 100%;
   height: 5em;
 	padding: .5em 0 0 1.5em;
 }
 
+.social ul {
+  display: flex;
+}
+
 .social li {
-	float: left;
-	display: block;
 	margin-right: 3em;
 }
 
@@ -255,47 +310,51 @@ article {
 	color: #9bcde8;
 }
 
-.space2 {
-  background-color: #000;
-  float: right;
-  width: 100%;
-  height: 13.4em;
-}
-
-.design-image img {
-  display: inline-flex;
-  width: 100%;
+.design-image {
+    display: flex;
+    position: relative;
+    flex-flow: column-reverse wrap-reverse;
+    width: 100%;
 }
 
 .design-image h1 span {
-  color: #fff;
   position: absolute;
-  left: 3em;
+  color: #fff;
   font-size: 5em;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  padding: .5em 0;
+  margin: 0 0 0 .5em;
+  text-shadow: 0 5px 5px rgba(0,0,0,0.4);
 }
 
 .portfolio {
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-	margin: auto 0;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .project {
 	width: 273px;
+  margin: .3em;
+}
+
+.portfolio :nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.portfolio :nth-child(2n+1) {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .portfolio img {
 	width: 100%;
 	float: none;
 	border-style: solid;
-	border-color: #000;
-	border-width: 2px;
+	border-color: rgba(0,0,0,0.4);
+	border-width: 1px;
 }
 
 figure {
-	margin: 1em 0 .25em .25em;
+  margin: 0 auto;
 }
 
 figcaption {
