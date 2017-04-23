@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="styles/first-stylesheet.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
   </head>
   <body>
     <div id="container">
@@ -27,14 +27,13 @@
         </div>
       </header>
       <main>
-        <section class="column1">
+        <section class="col-1">
           <img src="images/rocks.png" alt="stack rocks">
         </section>
-        <section class="column2">
+        <section class="col-2">
           <article>
             <div class="intro">
               <h2>HTML5 & CSS3 Web Fundamentals</h2>
-              <br>
                 <div class="content">
                   <p>This is the portfolio site of Kerry O'Neill-Miller created for the
                      purpose of showcasing what we have learned and covered over the course
@@ -43,13 +42,75 @@
               </div>
             </article>
           </section>
+          <section class="col-3">
+            <article>
+              <div class="intro">
+              <h2>Responsive Web Design</h2>
+                <div class="content">
+                  <p>Responsive Design is necessary for today's internet connected available devices.  Our desktop machines can power resolutions higher than the typical monitor and we can take our internet to go on screens the size of a watch.  With this idea in mind we the developers must adapt our design for the vast quantity of internet capable devices available to us.  How many times have you gone to a website that did not accommodate your smart phone?  It creates difficult readability and usability. How well your site performs validates you and sets a first impression and normally you want that impression to be a good one.  It is situations like this that requires the need for responsive design.  With proper method design we can create beautiful webpages that can fluidly change form depending on what resolution you are viewing at.  Getting flexible.  There are 3 main ingredients that make up a good responsive website:  Flexible Grid layouts, Flexible Media and Media Queries.   Throw out static sizing and absolute placements and embrace percentages and ephemeral units.  Or how I look at it, embrace the chaos and own it.</p>
+                  <img src="images/cupOesspresso.png" alt="cup of coffee vector graphic">
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="col-3">
+          <form>
+            <label>
+              <input>
+
+              </input>
+            </label>
+
+
+          </form>
       </main>
       <footer>
-        <hr class="footer-line">
-        <div class="footer-content">
-        <div class="copyright">
-          <p>Copyright &copy; Kerry O'Neill-Miller 2017  |  HTML5 & CSS3 Foundations</p>
-        </div>
+        <section class="col-1">
+          <address>
+            <ul>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>206.618.0653
+              </li>
+              <li>
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                <p><a href="mailto:designmonkey@gmail.com">designmonkey@gmail.com</a>
+              </li>
+            </ul>
+          </address>
+        </section>
+        <section class="col-1">
+          <div class="social">
+            <ul>
+              <li class="twitter">
+                <a href="https://twitter.com/javadaemonberry" target="_blank" title="Twitter">
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+              </li>
+              <li class="instagram">
+                <a href="https://instagram.com/keonei" target="_blank" title="Instagram">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+              </li>
+              <li class="facebook">
+                <a href="https://www.facebook.com/keonei" target="_blank" title="Facebook">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+              </li>
+              <li class="linkedin">
+                <a href="https://www.linkedin.com/in/kerryoneillmiller/" target="_blank" title="Linkedin">
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+              </li>
+              <li class="github">
+                <a href="https://github.com/Keonei" target="_blank" title="Github">
+                <i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+      </section>
+      </footer>
+      <div id="copyright">
+        <section class="col-1">
+          <p>Copyright &copy; Kerry O'Neill-Miller 2017</p>
+        </section>
+        <section class="col-1">
           <nav class="nav-sub">
             <ul>
               <li><a href="work.html" title="work">Work</a></li>
@@ -57,7 +118,7 @@
               <li><a href="index.html" title="home">Home</a></li>
             </ul>
           </nav>
-        </div>
-      </footer>
+        </section>
+      </div>
     </div>
   </body>

@@ -21,8 +21,8 @@ img {
 }
 
 body {
-	font-family: 'Crimson Text', serif;
-	font-size: 1.125rem;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -38,6 +38,7 @@ h1 {
 h2 {
 	font-size: 1.150rem;
 	text-align: center;
+  margin: 0;
 }
 
 a {
@@ -109,7 +110,7 @@ nav a {
 
 .nav-main  {
   order: 2;
-  padding-left: 14.3em;
+  padding-left: 20em;
 	border-top-width: .15em;
 	border-top-style: solid;
 	border-top-color: #000;
@@ -123,7 +124,8 @@ nav a {
 }
 
 .nav-main ul li {
-  font-size: 1.25em;
+  font-family: 'Crimson-text' , Serif;
+  font-size: 1.250em;
   letter-spacing: .2px;
   text-transform: uppercase;
   margin-left: 10px;
@@ -211,20 +213,33 @@ main > [class^="main-"]:last-child {
   padding: 0;
 }
 
-.column1 {
+.col-1 {
   width: 50%;
 }
 
-.column2 {
-  background-color: black;
-  width: 50%;
-}
-
-.column1 img {
+.col-1 img {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
 }
+
+.col-2 {
+  background-color: black;
+  width: 50%;
+}
+
+.col-3 .intro {
+    background-color: rgba(192, 192, 192, 0.5);
+}
+
+.col-3 img {
+  flex-shrink: 0;
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
 main h2 {
   text-align: center;
   text-transform: uppercase;
@@ -266,12 +281,13 @@ article {
   main h2 {
     font-size: 1.150em;
   }
-  .column1 {
+  .col-1 {
     width: 100%;
   }
-  .column2 {
+  .col-2 {
     width: 100%;
   }
+
   .content {
     font-size: 1.125em;
     letter-spacing: 1px;
@@ -280,34 +296,6 @@ article {
     background-color: #e98a02;
     padding: 40px 40px 40px 40px;
   }
-}
-
-.social {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-	font-family: sans-serif;
-	font-size: .8em;
-  width: 100%;
-  height: 5em;
-	padding: .5em 0 0 1.5em;
-}
-
-.social ul {
-  display: flex;
-}
-
-.social li {
-	margin-right: 3em;
-}
-
-.social a {
-	color: #e98a02;
-}
-
-.social a:hover {
-	color: #9bcde8;
 }
 
 .design-image {
@@ -336,6 +324,7 @@ article {
 
 .design-image h1 span {
   position: absolute;
+  font-family: 'Crimson-text' , Serif;
   color: #fff;
   font-size: 5em;
   padding: .5em 0;
@@ -382,36 +371,101 @@ figcaption {
 
 footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  background: #4c4c4c;
   width: 100%;
-  font-size: .750em;
-  margin: 0 auto;
-  padding: 20px 0 20px 0;
+  background-color: grey;
+  font-family: 'Raleway', sans-serif;
+  font-size: .875em;
+  color: #fff;
+  letter-spacing: .1em;
+  margin-top: .5em;
+  padding: 2em;
 }
 
-hr.footer-line {
-	background-color: #000;
-  align-content: stretch;
-  width: 100%;
-	height: 2px;
-  order: 0;
-	border: 0 none;
+address {
+  font-style: normal;
+  line-height: 1em;
 }
 
-.footer-content {
+address p {
+  text-align: left;
+}
+
+address i {
+  float: left;
+  margin-right: 1em;
+}
+
+address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+address a:link {
+  color: #fff;
+}
+
+address a:hover {
+	color: #e98a02;
+}
+
+.social {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+	font-size: 1em;
+  width: 100%;
+  height: 5em;
+	padding: .5em 0 0 1.5em;
 }
 
-.copyright {
-  width: 50%;
+.social ul {
+  display: flex;
+}
+
+.social li {
+	margin-right: 3em;
+}
+
+.social a {
+  color: #fff;
+}
+
+.social a:hover {
+	color: #e98a02;
+}
+
+@media all and (max-width: 780px) {
+	.social {
+    font-size: .875em;
+  }
+  footer {
+    padding: .5em;
+  }
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+    background: #4c4c4c;
+    color: #d9d9d9;
+    font-size: .875em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .1em;
+    width: 100%;
+    padding: .5em 2em .5em 2em;
+    margin: 0 auto;
+}
+
+#copyright .col-1 {
+  flex: 1;
 }
 
 .nav-sub {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 50%;
 }
 
 .nav-sub ul {
@@ -421,12 +475,21 @@ hr.footer-line {
 }
 
 .nav-sub ul li {
-  margin-left: 2px;
+  background: none;
+  margin-left: .5em;
   border-right-width: 1px;
 }
 
 .nav-sub li + li {
 	border-right-width: 1px;
 	border-right-style: solid;
-	border-right-color: #000;
+	border-right-color: #d9d9d9;
+}
+
+.nav-sub a {
+  color: #d9d9d9;
+}
+
+.nav-sub a:hover {
+  color: #9bcde8;
 }
