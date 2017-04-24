@@ -110,7 +110,7 @@ nav a {
 
 .nav-main  {
   order: 2;
-  padding-left: 20em;
+  padding-left: 13em;
 	border-top-width: .15em;
 	border-top-style: solid;
 	border-top-color: #000;
@@ -135,45 +135,48 @@ nav a {
   border-right-color: #000;
 }
 
-/* smaller than 1000px */
-@media all and (max-width: 1000px) {
-	.nav-main {
-    padding-left: 12em;
-  }
-}
-
-/* smaller than 965px */
-@media all and (max-width: 965px) {
+/* smaller than 1010px */
+@media all and (max-width: 1010px) {
 	.nav-main {
     padding-left: 10em;
+    margin-top: 9.8em;
   }
 }
 
-/* smaller than 925px */
-@media all and (max-width: 925px) {
+/* smaller than 988px */
+@media all and (max-width: 988px) {
 	.nav-main {
     padding-left: 8em;
+    margin-top: 10.2em;
   }
 }
 
-/* smaller than 888px */
-@media all and (max-width: 888px) {
+/* smaller than 968px */
+@media all and (max-width: 968px) {
 	.nav-main {
     padding-left: 6em;
+    margin-top: 10em;
   }
 }
 
-/* smaller than 850px */
-@media all and (max-width: 850px) {
+/* smaller than 928px */
+@media all and (max-width: 928px) {
 	.nav-main {
     padding-left: 4em;
   }
 }
 
-/* smaller than 815px */
-@media all and (max-width: 815px) {
+/* smaller than 893px */
+@media all and (max-width: 893px) {
 	.nav-main {
     padding-left: 1em;
+  }
+}
+
+/* smaller than 846px */
+@media all and (max-width: 846px) {
+	.nav-main {
+    border: none;
   }
 }
 
@@ -421,6 +424,7 @@ figure {
 }
 
 figcaption {
+  font-size: .875em;
   text-transform: uppercase;
   text-align: center;
   color: #e98a02;
