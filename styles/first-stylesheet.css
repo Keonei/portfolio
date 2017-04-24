@@ -229,7 +229,7 @@ main > [class^="main-"]:last-child {
 }
 
 .col-3 .intro {
-    background-color: rgba(192, 192, 192, 0.5);
+    background-color: #c0c0c0;
 }
 
 .col-3 img {
@@ -238,6 +238,63 @@ main > [class^="main-"]:last-child {
   height: 20%;
   margin: 0 0 0 32em;
   padding-top: 1em;
+}
+
+.form-container {
+  background-color: #9bcde8;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 40px 40px 40px;
+}
+
+input, textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: .875em;
+  background-color: #c0c0c0;
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 2%;
+  border: 2px solid #fff;
+}
+
+textarea {
+  height: 12em;
+}
+
+.form-col {
+  width: 49%;
+  float: left;
+  margin-left: 2%;
+}
+
+.form-col:first-child {
+  margin-left: 0;
+}
+
+.form-col:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+.form-text {
+  float: left;
+  width: 100%;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #e98a02;
+  width: 35%;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: .5em;
+}
+
+.submit-btn:hover {
+  background-color:  #eda134;
+  cursor: pointer;
 }
 
 main h2 {
