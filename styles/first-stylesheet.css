@@ -408,13 +408,10 @@ article {
 .project {
 	width: 273px;
   margin: .3em;
+  float: left;
 }
 
-.portfolio :nth-child(3n+1) {
-  margin-left: 0;
-}
-
-.portfolio :nth-child(2n+1) {
+.project:nth-child(2n+1) {
   margin-right: 0;
   margin-left: 0;
 }
@@ -436,6 +433,7 @@ figcaption {
   text-transform: uppercase;
   text-align: center;
   color: #e98a02;
+  margin-top: .3em;
 }
 
 footer {
