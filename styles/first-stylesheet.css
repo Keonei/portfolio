@@ -22,7 +22,7 @@ img {
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1rem;
+	font-size: 100%;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* 24px / 16px */
   margin: 0;
 }
 
@@ -241,6 +241,14 @@ main > [class^="main-"]:last-child {
   height: 20%;
   margin: 0 0 0 32em;
   padding-top: 1em;
+}
+
+/* smaller than 893px */
+@media all and (max-width: 893px) {
+	.col-3 img {
+    font-size: 1em;
+    margin: 0 auto;
+  }
 }
 
 .form-container {
@@ -553,4 +561,77 @@ address a:hover {
 
 .nav-sub a:hover {
   color: #9bcde8;
+}
+
+/* Essay */
+
+.col-3-essay {
+  font-family: 'Calibri', sans-serif;
+  background-color: #fff;
+}
+
+.essay-header {
+  background-color: silver;
+  box-shadow: none;
+  padding: 1em;
+}
+
+.essay-content {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.name {
+  font-size: .875em;
+  text-align: right;
+  line-height: .4em;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.title {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.title h1, .title h2 {
+  text-align: left;
+}
+
+.title h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.title h2 {
+  font-size: 1.2em;
+}
+
+.essay-p-1 {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lead {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.col-3-essay img {
+  margin: 0 0 1em 1em;
+  padding: 0;
+}
+
+.essay-content figure {
+  float: right;
+  margin: 0;
+}
+
+.fig-text {
+  font-size: .875em;
+  font-style: italic;
+  color: black;
+  text-align: center;
+  margin-bottom: 1em;
 }
