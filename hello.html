@@ -8,7 +8,43 @@
     <link rel="stylesheet" href="styles/first-stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+      });
+  });
+  </script>
   </head>
+  <body>
+    <div id="cover-page" class="design-image">
+      <div class="design-container">
+        <h1><span>I design & make stuff go.</span></h1>
+      </div>
+    </div>
+    <div class="scrollto">
+      <a href="#container">Hello<br>
+        <i class="fa fa-chevron-down">
+        </i>
+      </a>
+    </div>
+    <div id="container">
+      <img src="images/drop-sml.png" class="dropdown" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown2" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown3" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown4" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown5" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown6" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown7" alt="drop">
+      <img src="images/cupOesspresso.png" class="coffeecup" alt="cup of coffee">
   <body>
     <div id="container">
       <header>
