@@ -9,9 +9,43 @@
     <link rel="stylesheet" href="styles/first-stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+      });
+  });
+  </script>
   </head>
   <body>
+    <div id="cover-page" class="design-image">
+      <div class="design-container">
+        <h1><span>I design & make stuff go.</span></h1>
+      </div>
+    </div>
+    <div class="scrollto">
+      <a href="#container">Hello<br>
+        <i class="fa fa-chevron-down">
+        </i>
+      </a>
+    </div>
     <div id="container">
+      <img src="images/drop-sml.png" class="dropdown" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown2" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown3" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown4" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown5" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown6" alt="drop">
+      <img src="images/drop-sml.png" class="dropdown7" alt="drop">
+      <img src="images/cupOesspresso.png" class="coffeecup" alt="cup of coffee">
       <header>
         <div class="header-wrapper">
           <div class="logo">
@@ -69,6 +103,16 @@
                 <p>HTML5 is a living language and is also a work in progress, we have just touched the surface and it is not fully standardized so it isn’t recommended to discount HTML4 just yet older browsers such as Internet Explorer 8 don’t support HTML5.   HTML5 has come out of the gate swinging some impressive changes to the way we build websites however its adoption will be slow just as any newly developed technology.  There is still a great number  of users that still use Microsoft Windows XP which is why backwards compatibility is so important to keep in mind when developing in any language.</p>
                 <div class="end">
                   <p>*  “Hypertext” definition – Marriam-Webster Online Dictionary.</p>
+            </article>
+          </section>
+          <section class="col-3">
+            <article>
+              <div class="intro">
+                <h2>Responsive Web Design</h2>
+                  <div class="content">
+                    <p>Responsive Design is necessary for today's internet connected available devices.  Our desktop machines can power resolutions higher than the typical monitor and we can take our internet to go on screens the size of a watch.  With this idea in mind we the developers must adapt our design for the vast quantity of internet capable devices available to us.  How many times have you gone to a website that did not accommodate your smart phone?  It creates difficult readability and usability. How well your site performs validates you and sets a first impression and normally you want that impression to be a good one.  It is situations like this that requires the need for responsive design.  With proper method design we can create beautiful webpages that can fluidly change form depending on what resolution you are viewing at.  Getting flexible.  There are 3 main ingredients that make up a good responsive website:  Flexible Grid layouts, Flexible Media and Media Queries.   Throw out static sizing and absolute placements and embrace percentages and ephemeral units.  Or how I look at it, embrace the chaos and own it.</p>
+                </div>
+              </div>
             </article>
           </section>
       </main>
