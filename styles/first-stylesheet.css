@@ -18,6 +18,7 @@ img {
   border: 0;
   vertical-align: middle;
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -62,17 +63,28 @@ a:hover {
 		}
 
 .side-image {
-  display: flex;
   flex-direction: column;
-  width: 19%;
+  display: flex;
+  width: 23%;
   float: left;
   margin: 0 auto;
 }
 
-.coffee-image {
-  margin: 100% auto 0;
+.side-image div {
+flex: 1 1 auto;
+margin: 40% auto 0;
+padding: 1em;
 }
 
+.side-image div img {
+  width: 100%;
+}
+
+@media all and (max-width: 584px) {
+  .side-image {
+    display: none;
+  }
+}
     /*
     ==============================================
     CSS3 ANIMATION CHEAT SHEET
@@ -94,7 +106,7 @@ a:hover {
     */
 
     .dropdown {
-      margin-left: 12px;
+      margin-left: 6rem;
       position: absolute;
       animation-name: dropdown;
       -webkit-animation-name: dropdown;
@@ -105,12 +117,6 @@ a:hover {
       -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
       visibility: visible !important;
-    }
-
-    @media screen and (min-width: 1245px) {
-      .dropdown {
-        margin-left: 6rem;
-      }
     }
 
     @media screen and (max-width: 805px) {
@@ -144,13 +150,13 @@ a:hover {
     }
 
     .dropdown2 {
-      margin-top: 7rem;
-      margin-left: 80px;
+      margin-top: 2rem;
+      margin-left: 10rem;
       position: absolute;
       animation-name: dropdown2;
       -webkit-animation-name: dropdown2;
-      animation-duration: 1.2s;
-      -webkit-animation-duration: 1.2s;
+      animation-duration: 2.2s;
+      -webkit-animation-duration: 2.2s;
       animation-timing-function: ease;
       -webkit-animation-timing-function: ease;
       -webkit-animation-iteration-count: infinite;
@@ -160,17 +166,6 @@ a:hover {
       visibility: visible !important;
     }
 
-    @media screen and (min-width: 1500px) {
-      .dropdown2 {
-        margin-left: 230px;
-      }
-    }
-
-    @media screen and (min-width: 1100px) {
-      .dropdown2 {
-        margin-left: 130px;
-      }
-    }
 
     @media screen and (max-width: 805px) {
       .dropdown2 {
@@ -185,8 +180,8 @@ a:hover {
 
       100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 250%, 0);
-                transform: translate3d(0, 250%, 0);
+        -webkit-transform: translate3d(0, 350%, 0);
+                transform: translate3d(0, 350%, 0);
       }
     }
 
@@ -197,14 +192,14 @@ a:hover {
 
       100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 250%, 0);
-                transform: translate3d(0, 250%, 0);
+        -webkit-transform: translate3d(0, 350%, 0);
+                transform: translate3d(0, 350%, 0);
       }
     }
 
     .dropdown3 {
-      margin-top: 460px;
-      margin-left: 15px;
+      margin-top: 2rem;
+      margin-left: 12rem;
       position: absolute;
       animation-name: dropdown3;
       -webkit-animation-name: dropdown3;
@@ -219,17 +214,7 @@ a:hover {
       visibility: visible !important;
     }
 
-    @media screen and (min-width: 1500px) {
-      .dropdown3 {
-        margin-left: 200px;
-      }
-    }
 
-    @media screen and (min-width: 1100px) {
-      .dropdown3 {
-        margin-left: 100px;
-      }
-    }
 
     @media screen and (max-width: 805px) {
       .dropdown3 {
@@ -244,8 +229,8 @@ a:hover {
 
       100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 450%, 0);
-                transform: translate3d(0, 450%, 0);
+        -webkit-transform: translate3d(0, 420%, 0);
+                transform: translate3d(0, 420%, 0);
       }
     }
 
@@ -256,14 +241,14 @@ a:hover {
 
       100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 450%, 0);
-                transform: translate3d(0, 450%, 0);
+        -webkit-transform: translate3d(0, 420%, 0);
+                transform: translate3d(0, 420%, 0);
       }
     }
 
     .dropdown4 {
-      margin-top: 580px;
-      margin-left: 120px;
+      margin-top: 5rem;
+      margin-left: 8rem;
       position: absolute;
       animation-name: dropdown4;
       -webkit-animation-name: dropdown4;
@@ -276,17 +261,7 @@ a:hover {
       visibility: visible !important;
     }
 
-    @media screen and (min-width: 1500px) {
-      .dropdown4 {
-        margin-left: 120px;
-      }
-    }
 
-    @media screen and (min-width: 1100px) {
-      .dropdown4 {
-        margin-left: 120px;
-      }
-    }
 
     @media screen and (max-width: 805px) {
       .dropdown4 {
@@ -301,8 +276,8 @@ a:hover {
 
       100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 320%, 0);
-                transform: translate3d(0, 320%, 0);
+        -webkit-transform: translate3d(0, 450%, 0);
+                transform: translate3d(0, 450%, 0);
       }
     }
 
@@ -313,8 +288,8 @@ a:hover {
 
       100% {
         opacity: 0;
-        -webkit-transform: translate3d(0, 320%, 0);
-                transform: translate3d(0, 320%, 0);
+        -webkit-transform: translate3d(0, 450%, 0);
+                transform: translate3d(0, 450%, 0);
       }
     }
 
@@ -411,13 +386,13 @@ header {
 
 .header-wrapper {
   display: flex;
-  max-width: 960px;
   margin: 0 auto;
 }
 
 .logo {
   order: 1;
   justify-content: flex-start;
+  flex: 1 1 auto;
 }
 
 @media all and (max-width: 768px) {
@@ -443,11 +418,11 @@ nav a {
 
 .nav-main  {
   order: 2;
-  padding-left: 13em;
+  width: 80%;
 	border-top-width: .15em;
 	border-top-style: solid;
 	border-top-color: #000;
-	margin-top: 9em
+	margin-top: 9.1em
 }
 
 .nav-main ul{
@@ -518,7 +493,7 @@ nav a {
 	.nav-main {
     width: 100%;
     border: none;
-    padding: 0;
+    padding-right: 5.5em;
     margin-top: 0;
   }
   .nav-main ul li {
@@ -528,16 +503,23 @@ nav a {
 
 @media all and (max-width: 584px) {
   .nav-main {
-    width: 72%;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: .875em;
+  }
+  .logo {
+    width: 80%;
   }
 }
+
 
 main {
 	display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: auto;
 	max-width: 960px;
-  padding-right: 8em;
+  min-width: 0;
 	margin: 0 auto;
 }
 
@@ -551,17 +533,23 @@ main > [class^="main-"]:last-child {
 
 .col-1 {
   width: 50%;
+  flex: 1 1 auto;
 }
 
 .col-1 img {
   flex-shrink: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .col-2 {
   background-color: black;
   width: 50%;
+  flex: 1 1 auto;
+}
+
+.col-3 {
+  flex: 1 1 auto;
 }
 
 .col-3 .intro {
@@ -571,16 +559,23 @@ main > [class^="main-"]:last-child {
 .col-3 img {
   flex-shrink: 0;
   width: 20%;
-  height: 20%;
+  height: auto;
   margin: 0 0 0 32em;
   padding-top: 1em;
 }
+
 
 /* smaller than 893px */
 @media all and (max-width: 893px) {
 	.col-3 img {
     font-size: 1em;
     margin: 0 auto;
+  }
+}
+
+@media all and (max-width 375px) {
+  main {
+    padding: 0;
   }
 }
 
