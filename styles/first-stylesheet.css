@@ -732,13 +732,97 @@ article {
   text-shadow: 0 5px 5px rgba(0,0,0,0.4);
 }*/
 
+/* ======================================================================================
+   Portfolio
+   =================================================================================== */
+
 .portfolio {
   display: flex;
   flex-flow: row wrap;
 }
 
+.portfolio a {
+  color: black;
+}
+
+.portfolio article {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+
+.portfolio img {
+  position: absolute;
+  top: 0;
+	width: 100%;
+	float: none;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.4);
+	border-width: .03em;
+}
+
+.portfolio .clr {
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.portfolio article:hover {
+	background: black;
+}
+
+.portfolio article:hover header .project-details {
+	top: 185px;
+}
+
+.portfolio article:hover .clr {
+	opacity: 1;
+}
+
+.portfolio header {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  z-index: 2;
+  padding-bottom: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.portfolio header .project-details {
+  background: rgba(0,0,0,0.9);
+  padding: .875em;
+  position: absolute;
+  top: 280px;
+  left: 0;
+  text-align: center;
+  width: 280px;
+  height: 95px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+}
+
+.portfolio header .project-details p {
+  font-size: .875em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #e98a02;
+  margin-top: .3em;
+}
+
 .project {
-	width: 273px;
+	width: 280px;
   margin: .3em;
   float: left;
 }
@@ -746,14 +830,6 @@ article {
 .project:nth-child(2n+1) {
   margin-right: 0;
   margin-left: 0;
-}
-
-.portfolio img {
-	width: 100%;
-	float: none;
-	border-style: solid;
-	border-color: rgba(0,0,0,0.4);
-	border-width: 1px;
 }
 
 figure {
