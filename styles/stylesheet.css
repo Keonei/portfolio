@@ -853,14 +853,6 @@ figure {
   margin: 0 auto;
 }
 
-figcaption {
-  font-size: .875em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #e98a02;
-  margin-top: .3em;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
