@@ -6,24 +6,11 @@
     <title>Kerry O'Neill | Fundamentals Porfolio</title>
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="styles/first-stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-      });
-  });
-  </script>
+    <script type="text/javascript" src="scripts/script.js"></script>
   </head>
   <body>
     <div id="cover-page" class="design-image">
@@ -38,6 +25,12 @@
       </a>
     </div>
     <div id="container">
+      <div class="scrollup">
+        <a href="#container">top<br>
+          <i class="fa fa-chevron-up">
+          </i>
+        </a>
+      </div>
       <header>
         <div class="header-wrapper">
           <div class="logo">
@@ -46,10 +39,10 @@
           </div>
           <nav class="nav-main">
             <ul>
-              <li><a href="index.html" title="home">Home</a></li>
-              <li><a href="hello.html" title="hello">Hello</a></li>
-              <li><a href="work.html" title="projects">Work</a></li>
-              <li><a href="contact.html" title="contact">Contact</a></li>
+              <li><a href="#container" title="home">Home</a></li>
+              <li><a href="#hello" title="hello">Hello</a></li>
+              <li><a href="#portfolio" title="projects">Work</a></li>
+              <li><a href="#form-container" title="contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -81,11 +74,6 @@
           </section>
           <section class="col-3-essay">
             <header class="essay-header">
-              <div class="name">
-                <p>Kerry O'Neill-Miller</p>
-                <p>HTML5 200 B Sp17:  Web Forms, Javascript & Responsive Design</p>
-                <p>HTML vs HTML5</p>
-              </div>
               <div class="title">
                 <h1>The Power of HTML5</h1>
                 <h2>A Taste into the Future of the Web</h2>
@@ -116,6 +104,169 @@
               </div>
             </article>
           </section>
+          <section class="col-1">
+            <img src="images/orangebacon.png" alt="Self portrait with orange smile" id="hello">
+          </section>
+          <section class="col-2">
+            <article>
+              <div class="intro">
+                <h2>Powered by Caffeine</h2>
+                <br>
+                  <div class="content">
+                    <p>Urban dwelling Pacific Northwest moss-footed hippy who loves the
+                  mountains, lives for metal, tinker, creator and is somewhat of
+                  a Daemon.</p>
+                    <br>
+                    <p>I love to design things and I like to do drawings,
+                  when I'm not out socializing or exploring I will enjoy a cup
+                  of coffee and a good book or possibly a video game and when
+                  I'm inspired I'll pull out my esil and create worlds.</p>
+                  </div>
+                </div>
+              </article>
+        </section>
+        <section id="portfolio">
+          <div class="portfolio-spacer"></div>
+          <div class="portfolio-row">
+            <article class="project">
+              <figure>
+                <a href="https://keonei.github.io/stp-archery/" target="_blank">
+                  <header>
+                    <div class="project-details">
+                      <p>Website Development & Design</p>
+                    </div>
+                  </header>
+                  <span class="bw-wrap">
+                    <img src="images/stp-archery-logo-bw.png" alt="archery class logo" class="bw">
+                  </span>
+                  <span class="clr-wrap">
+                    <img src="images/stp-archery-logo.png" alt="archery class logo" class="clr">
+                  </span>
+                </a>
+                <!-- <figcaption>Website Development & Design</figcaption> -->
+              </figure>
+            </article>
+            <article class="project">
+              <figure>
+                <header>
+                  <div class="project-details">
+                    <p>Band Logo re-brand for promotional EP</p>
+                  </div>
+                </header>
+                <span class="bw-wrap">
+                  <img src="images/shedu-blackholewiz-thumb.png" alt="shedu band logo blackhole wizard" class="bw">
+                </span>
+              </a>
+                <!-- <figcaption>Band Logo re-brand for promotional EP</figcaption> -->
+              </figure>
+            </article>
+            <article class="project">
+              <figure>
+                <a href="https://keonei.github.io/kitties-to-go/" target="_blank">
+                  <header>
+                    <div class="project-details">
+                      <p>Front End Development from Mockup</p>
+                    </div>
+                  </header>
+                  <span class="bw-wrap">
+                    <img src="images/mochup-practice-bw.png" alt="kitty web layout from mochup" class="bw">
+                  </span>
+                  <span class="clr-wrap">
+                    <img src="images/mochup-practice.png" alt="kitty web layout from mochup" class="clr">
+                  </span>
+                </a>
+                <!-- <figcaption>Front End Development from Mockup</figcaption> -->
+              </figure>
+            </article>
+          </div>
+          <div class="portfolio-row">
+            <article class="project">
+              <figure>
+                <a href="http://sheduisloud.suspiration.org/" target="_blank">
+                  <header>
+                    <div class="project-details">
+                      <p>Band Website</p>
+                    </div>
+                  </header>
+                  <span class="bw-wrap">
+                    <img src="images/shedu-thumb-bw.png" alt="shedu band website" class="bw">
+                  </span>
+                  <span class="clr-wrap">
+                    <img src="images/shedu-thumb.png" alt="shedu band website" class="clr">
+                  </span>
+                </a>
+                <!-- <figcaption>Band Website</figcaption> -->
+              </figure>
+            </article>
+            <article class="project">
+              <figure>
+                <header>
+                  <div class="project-details">
+                    <p>Wine Label</p>
+                  </div>
+                </header>
+                <span class="bw-wrap">
+                  <img src="images/wodanazraven-thumb.png">
+                </span>
+                <!-- <figcaption>Wine Label</figcaption> -->
+              </figure>
+            </article>
+            <article class="project">
+              <figure>
+                <a href="https://keonei.github.io/html200-ecomm-spr17/" target="_blank">
+                  <header>
+                    <div class="project-details">
+                      <p>Javascript Ecommerce site from Mockup</p>
+                    </div>
+                  </header>
+                  <span class="bw-wrap">
+                    <img src="images/js-ecommerce-bw.png" alt="ecommerce mochup site with js function" class="bw">
+                  </span>
+                  <span class="clr-wrap">
+                    <img src="images/js-ecommerce.png" alt="ecommerce mochup site with js function" class="clr">
+                  </span>
+                </a>
+                <!-- <figcaption>Javascript Ecommerce site from Mockup</figcaption> -->
+              </figure>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div id="form-container">
+            <h2>Talk to Me</h2>
+              <p>Interested in working together? Please introduce yourself and tell me a bit about your project, expect a couple business days for me to respond.  Cheers!
+              <form>
+                <div class="form-col">
+                  <label>
+                    <input type="text" name="full-name" placeholder="Name" required>
+                  </label>
+                </div>
+                <div class="form-col">
+                  <label>
+                    <input type="email" name="email" placeholder="Email address" required>
+                  </label>
+                </div>
+                <div class="form-col">
+                  <label>
+                    <input type="text" name="phone-number" placeholder="Phone number">
+                  </label>
+                </div>
+                <div class="form-col">
+                  <label>
+                    <input type="text" name="website" placeholder="Website">
+                  </label>
+                </div>
+                <div class="form-text">
+                  <label>
+                    <textarea name="comments" placeholder="Tell me about it"></textarea>
+                  </label>
+                </div>
+                <div class="form-btn">
+                  <input class="submit-btn" type="submit" name="submit" value="Send">
+                </div>
+              </form>
+            </div>
+        </section>
       </main>
     </div>
     <footer>
@@ -167,10 +318,10 @@
       <section class="col-1">
         <nav class="nav-sub">
           <ul>
-            <li><a href="contact.html" title="contact">Contact</a></li>
-            <li><a href="work.html" title="work">Work</a></li>
-            <li><a href="hello.html" title="hello">Hello</a></li>
-            <li><a href="index.html" title="home">Home</a></li>
+            <li><a href="#form-container" title="contact">Contact</a></li>
+            <li><a href="#portfolio" title="work">Work</a></li>
+            <li><a href="#hello" title="hello">Hello</a></li>
+            <li><a href="#container" title="home">Home</a></li>
           </ul>
         </nav>
       </section>
