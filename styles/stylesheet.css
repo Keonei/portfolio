@@ -62,28 +62,64 @@ a:hover {
 		color: #9bcde8;
 		}
 
-.side-image {
-  flex-direction: column;
+#main-grid {
   display: flex;
-  width: 23%;
+  flex: 1;
+}
+
+.sidebar {
+  order: 1;
+  width: 14em;
   float: left;
   margin: 0 auto;
 }
 
-.side-image div {
+.sidebar div {
 flex: 1 1 auto;
-margin: 60% auto 0;
+margin-top: 60%;
 padding: 1em;
 }
 
-.side-image div img {
+.sidebar div img {
   width: 100%;
 }
 
+.sidebar-right {
+  order: 3;
+  width: 14em;
+  float: left;
+  margin: 0 auto;
+}
+
 @media all and (max-width: 584px) {
-  .side-image {
+  .sidebar {
     display: none;
   }
+}
+
+.scrollup {
+  display: inline-block;
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  bottom: 8em;
+  right: 4em;
+  display: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.scrollup a {
+  text-decoration: none;
+  color: #e98a02;
+}
+
+.scrollup a:hover {
+  color: #3a3a3a;
 }
     /*
     ==============================================
@@ -368,31 +404,6 @@ padding: 1em;
   color: #3a3a3a;
 }
 
-.scrollup {
-  display: inline-block;
-  position: fixed;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  font-size: 1.5em;
-  letter-spacing: .1em;
-  bottom: 11em;
-  left: 7em;
-  display: none;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.scrollup a {
-  text-decoration: none;
-  color: #e98a02;
-}
-
-.scrollup a:hover {
-  color: #3a3a3a;
-}
-
 #container {
 	background: url(../images/fleck-white.gif) fixed repeat center center;
   margin-left: 1.75vw;
@@ -554,10 +565,11 @@ nav a {
 
 
 main {
-	display: flex;
+	flex: 1;
+  order: 2;
   flex-wrap: wrap;
   width: auto;
-	max-width: 960px;
+	max-width: 72em;
   min-width: 0;
 	margin: 0 auto;
 }
@@ -571,8 +583,11 @@ main > [class^="main-"]:last-child {
 }
 
 .col-1 {
-  width: 50%;
   flex: 1 1 auto;
+  width: 50%;
+  height: 555px;
+  overflow: hidden;
+  float: left;
 }
 
 .col-1 img {
@@ -582,13 +597,16 @@ main > [class^="main-"]:last-child {
 }
 
 .col-2 {
+  flex: 1 1 auto;
   background-color: black;
   width: 50%;
-  flex: 1 1 auto;
+  height: 555px;
+  float: left;
 }
 
 .col-3 {
   flex: 1 1 auto;
+  float: left;
 }
 
 .col-3 .intro {
@@ -778,6 +796,7 @@ article {
 #portfolio {
   display: flex;
   flex-flow: row wrap;
+  float: left;
 }
 
 .portfolio-spacer {
@@ -794,8 +813,8 @@ article {
   float: left;
   overflow: hidden;
   position: relative;
-  width: 19.93em;
-  height: 19.93em;
+  width: 18.55em;
+  height: 18.55em;
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
@@ -835,8 +854,8 @@ article {
 
 #portfolio header {
   position: relative;
-  width: 19.93em;
-  height: 19.93em;
+  width: 18.55em;
+  height: 18.55em;
   z-index: 2;
   padding-bottom: 0;
   background: none;
@@ -847,10 +866,10 @@ article {
   background: rgba(0,0,0,0.9);
   padding: .875em;
   position: absolute;
-  top: 143em;
+  top: 18.5em;
   left: 0;
   text-align: center;
-  width: 19.93em;
+  width: 18.55em;
   height: 95px;
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.1s ease-in;
@@ -867,7 +886,7 @@ article {
 }
 
 .project {
-	width: 19.93em;
+	width: 18.55em;
   margin: .1em;
   float: left;
 }
@@ -901,6 +920,11 @@ footer {
   letter-spacing: .1em;
   margin-top: .5em;
   padding: 2em;
+}
+
+.col-1-footer {
+  flex: 1 1 auto;
+  width: 50%;
 }
 
 address {
@@ -1019,6 +1043,8 @@ address a:hover {
 .col-3-essay {
   font-family: 'Calibri', sans-serif;
   background-color: #fff;
+  flex: 1 1 auto;
+  float: left;
 }
 
 .essay-header {

@@ -3,7 +3,7 @@ $(function() {
   var target = $(this.hash);
   target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
         if (target.length) {
-          $('html,body').animate({
+          $('body,html').animate({
             scrollTop: target.offset().top
           }, 1000);
           return false;
@@ -18,6 +18,7 @@ $(window).scroll(function() {
         $('.scrollup').fadeOut(200);
     }
 });
+
 $('.scrollup').click(function() {
     $('body,html').animate({
         scrollTop : 0
