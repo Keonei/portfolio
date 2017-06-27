@@ -121,6 +121,20 @@ padding: 1em;
 .scrollup a:hover {
   color: #4c4c4c;
 }
+
+@media all and (max-width: 1404px) {
+  .sidebar {
+    width: 12.5em;
+  }
+
+  .sidebar-right {
+    width: 12.5em;
+  }
+  .scrollup {
+    right: 4em;
+  }
+}
+
     /*
     ==============================================
     CSS3 ANIMATION CHEAT SHEET
@@ -574,6 +588,14 @@ main > [class^="main-"]:last-child {
   padding-top: 1em;
 }
 
+@media all and (max-width: 1159px) {
+  .col-1 {
+    height: auto;
+  }
+  .col-2 {
+    height: auto;
+  }
+}
 
 /* smaller than 893px */
 @media all and (max-width: 893px) {
@@ -766,8 +788,8 @@ article {
   float: left;
   overflow: hidden;
   position: relative;
-  width: 18.55em;
-  height: 18.55em;
+  width: 18.567em;
+  height: 18.567em;
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
@@ -807,8 +829,8 @@ article {
 
 #portfolio header {
   position: relative;
-  width: 18.55em;
-  height: 18.55em;
+  width: 18.567em;
+  height: 18.567em;
   z-index: 2;
   padding-bottom: 0;
   background: none;
@@ -819,10 +841,10 @@ article {
   background: rgba(0,0,0,0.9);
   padding: .875em;
   position: absolute;
-  top: 18.5em;
+  top: 18.567em;
   left: 0;
   text-align: center;
-  width: 18.55em;
+  width: 18.567em;
   height: 95px;
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.1s ease-in;
@@ -839,7 +861,7 @@ article {
 }
 
 .project {
-	width: 18.55em;
+	width: 18.567em;
   margin: .1em;
   float: left;
 }
@@ -852,6 +874,31 @@ article {
 figure {
   margin: 0 auto;
 }
+
+@media all and (max-width: 1356px) {
+  #portfolio article {
+    width: 18em;
+    height: 18em;
+  }
+  #portfolio header {
+    width: 18em;
+    height: 18em;
+  }
+
+  #portfolio header .project-details {
+    top: 18em;
+    width: 18em;
+    height: 95px;
+  }
+
+  .project {
+  	width: 18em;
+  }
+}
+
+
+
+/* Footer and copyright */
 
 footer {
   display: flex;
